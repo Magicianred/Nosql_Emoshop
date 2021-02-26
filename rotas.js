@@ -15,7 +15,7 @@ routes.get('/', async (req,res) =>  {
 })
 
  
-//só necessito do get, porém utilizei o post para inserir os produtos no banco de dados Nosql
+
 routes.post('/mensagens', (req,res) => {
     const sendMessage = new Mensagens ({
         name:req.body.name,
